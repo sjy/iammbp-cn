@@ -56,18 +56,40 @@ nav.navbar {
     }
 }
 
-.row div {
-    -webkit-transition: width 0.8s ease, margin 0.8s ease;
-    -moz-transition: width 0.8s ease, margin 0.8s ease;
-    -o-transition: width 0.8s ease, margin 0.8s ease;
-    transition: width 0.8s ease, margin 0.8s ease;
+.nav-slide {
+
+    .col-lg-4 {
+        margin: 10px 0;
+    }
+
+    a {
+
+        img {
+            z-index: 2;
+            width:100%;
+            &:hover {
+                outline:solid 2px #eceef1;
+            }
+        }
+
+        h4 {
+            text-align: center;
+            color:#fff;
+            position: absolute;
+            bottom: 25%;
+            background: rgba(0,0,0,.65);
+            padding: .5em 0.8em;
+            margin:0;
+            right:0;
+        }
+    }
 }
 
 .cd-close {
     z-index: 2;
     position: fixed;
-    top: 80px;
-    right: 5%;
+    top: 100px;
+    right: 15%;
     background: url("../img/close.svg") no-repeat center center;
     background-size: 44px;
     width: 44px;
@@ -81,10 +103,17 @@ nav.navbar {
 
 .view-container {
     background:white;
+    padding: 0;
 }
 
 .home-container {
 
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff;
+    background-image: url('../img/home-bg.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
 
     #academy-summary{
         background-image:url('../img/academy-bp.png');
@@ -92,21 +121,27 @@ nav.navbar {
 
     #coach-summary{
         background-image:url('../img/coach-bp.png');
+        background-position: 30% 80px;
+
     }
 
     #academy-summary, #coach-summary {
         content:'';
+        padding: 0;
         background-repeat: no-repeat; 
         background-size: cover;
         transition: opacity 0.5s, height 0.4s;
         transition-timing-function: ease;
         min-height: 600px;
+        margin-bottom: 70px;
+        transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
     }
 
     > div{
         cursor: pointer;
         padding:0;
-        height:100vh;
 
         img.img-circle{
             width:150px
@@ -114,7 +149,6 @@ nav.navbar {
 
         .intro-text {
             padding-top: 350px;
-            height:100vh;
             background-color: RGBA(0,0,0,.6);
             transition-property: background;
             transition-duration: 0.5s;
@@ -138,7 +172,7 @@ nav.navbar {
                 letter-spacing: 5px;
                 color:#ffffff;
                 font-family: Kaiti ,STXingkai;
-                margin-top:  -30px;
+                margin-top:  -15px;
             }
 
         }
@@ -249,7 +283,7 @@ footer {
 
 .number-circle{
     background: transparent;
-    border: 1px solid #676E76;
+    border: 1px solid #6e6e6e;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -262,23 +296,43 @@ footer {
     font-size: 18px;
 }
 
-.bg-stacked{
+.bg-stacked-black,.bg-stacked-yellow,.bg-stacked{
+    padding:25px 0;
 
+    .media-body {
+        padding: 20px;
+    }
+    
     &:before{
         content: "";
         display: block;
         position: absolute;
-        bottom: -50px;
         left: 50%;
+        margin-top: -25px;
         width: 0;
         height: 0;
         margin-left: -25px;
         border-width: 25px;
         border-style: solid;
-        border-color: #eceef1 transparent transparent
+        border-color: #fff transparent transparent
     }
 
+    >content {
+        position:relative;
+    }
 }
+
+.bg-stacked-yellow {
+    color:#000;
+    background:#fb0;
+}
+
+.bg-stacked-black {
+    color:#6e6e6e;
+    background:#000;
+}
+
+
 
 .media-body {
 
@@ -295,4 +349,23 @@ footer {
         font-size:21px;
     }
 
+}
+
+.img-header {
+    margin-top:-40px;
+    height: 200px;
+    background-position:center 33%;
+}
+
+.slick-prev:before, .slick-next:before { 
+    color:#fff !important;
+}
+
+#clubs-slick {
+    div {
+        text-align: center;
+    }
+    img{
+        vertical-align: middle;
+    }
 }

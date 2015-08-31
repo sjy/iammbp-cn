@@ -3,6 +3,23 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
+                <h2 class="section-heading side-line">媒体报道</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+        </div>
+        <div class="container" id="media-slider" style="margin-top: -75px">
+            <a href="javascript:void(0)">
+                <img src='img/cases/media1.png' alt=""/>
+            </a>
+            <a href="javascript:void(0)">
+                <img src='img/cases/media2.png' alt=""/>
+            </a>
+            <a href="javascript:void(0)">
+                <img src='img/cases/media3.png' alt=""/>
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
                 <h2 class="section-heading side-line">明星教练</h2>
                 <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
@@ -13,7 +30,7 @@
                     <img src="img/cases/coach{{$index + 1}}.png" class="img-responsive img-circle" alt="">
                     <h4>Kay Garland</h4>
                     <p class="text-muted">Lead Designer</p>
-                    <ul class="list-inline social-buttons">
+                    <ul class="list-inline social-buttons hidden">
                         <li><a href="#"><i class="fa fa-twitter"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-facebook"></i></a>
@@ -30,26 +47,97 @@
                 <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12" style="margin-bottom: 80px">
-                <img src="img/allclubs.png" class="img-responsive img-rounded"/>
+        <div class="row bg-stacked" id="clubs-slick" style="background: #fff">
+            <div class="col-sm-3" >
+                <img src="img/clubs/escudo1.jpg" class="img-responsive"/>
+            </div>
+              <div class="col-sm-3" >
+                <img src="img/clubs/escudo2.jpg" class="img-responsive"/>
+            </div>
+            <div class="col-sm-3" >
+                <img src="img/clubs/escudo3.jpg" class="img-responsive"/>
+            </div>
+             <div class="col-sm-3" >
+                <img src="img/clubs/escudo4.jpg" class="img-responsive"/>
+            </div>
+              <div class="col-sm-3" >
+                <img src="img/clubs/escudo5.jpg" class="img-responsive"/>
+            </div>
+            <div class="col-sm-3" >
+                <img src="img/clubs/escudo6.jpg" class="img-responsive"/>
+            </div>
+             <div class="col-sm-3" >
+                <img src="img/clubs/escudo7.jpg" class="img-responsive"/>
+            </div>
+              <div class="col-sm-3" >
+                <img src="img/clubs/escudo8.jpg" class="img-responsive"/>
+            </div>
+            <div class="col-sm-3" >
+                <img src="img/clubs/escudo9.jpg" class="img-responsive"/>
+            </div>
+            <div class="col-sm-3" >
+                <img src="img/clubs/escudo10.jpg" class="img-responsive"/>
+            </div>
+            <div class="col-sm-3" >
+                <img src="img/clubs/escudo11.jpg" class="img-responsive"/>
+            </div>
+              <div class="col-sm-3" >
+                <img src="img/clubs/escudo12.jpg" class="img-responsive"/>
+            </div>
+            <div class="col-sm-3" >
+                <img src="img/clubs/escudo13.jpg" class="img-responsive"/>
+            </div>
+             <div class="col-sm-3" >
+                <img src="img/clubs/escudo14.jpg" class="img-responsive"/>
+            </div>
+              <div class="col-sm-3" >
+                <img src="img/clubs/escudo15.jpg" class="img-responsive"/>
+            </div>
+            <div class="col-sm-3" >
+                <img src="img/clubs/escudo16.jpg" class="img-responsive"/>
+            </div>
+             <div class="col-sm-3" >
+                <img src="img/clubs/escudo17.jpg" class="img-responsive"/>
+            </div>
+              <div class="col-sm-3" >
+                <img src="img/clubs/escudo18.jpg" class="img-responsive"/>
+            </div>
+            <div class="col-sm-3" >
+                <img src="img/clubs/escudo19.jpg" class="img-responsive"/>
+            </div>
+            <div class="col-sm-3" >
+                <img src="img/clubs/escudo20.jpg" class="img-responsive"/>
+            </div>
+            <div class="col-sm-3" >
+                <img src="img/clubs/escudo21.jpg" class="img-responsive"/>
+            </div>
+              <div class="col-sm-3" >
+                <img src="img/clubs/escudo22.jpg" class="img-responsive"/>
+            </div>
+            <div class="col-sm-3" >
+                <img src="img/clubs/escudo23.jpg" class="img-responsive"/>
+            </div>
+             <div class="col-sm-3" >
+                <img src="img/clubs/escudo24.jpg" class="img-responsive"/>
+            </div>
+              <div class="col-sm-3" >
+                <img src="img/clubs/escudo25.jpg" class="img-responsive"/>
+            </div>
+            <div class="col-sm-3" >
+                <img src="img/clubs/escudo26.jpg" class="img-responsive"/>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading side-line">媒体报道</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 col-md-4"  ng-repeat="i in []|range:3">
-                <div class="img-wrapper">
-                    <img ng-src="img/cases/media{{$index + 1}}.png"class="img-responsive img-rounded"/>
-                    <div class="caption">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
 </section>
+<script>
+            $('#clubs-slick').slick({
+                dots: true,
+                arrows: false,
+                slidesToShow: 7,
+                slidesToScroll: 2,
+                autoplay: true,
+                autoplaySpeed: 1000
+            });
+
+            $('#media-slider').coinslider({height: 600, width: 800, effect: 'straight', navigation: false, delay: 2000});
+
+</script>

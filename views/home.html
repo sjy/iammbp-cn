@@ -1,28 +1,81 @@
-<div style="margin: 0 -15px;">
+<div  class="container-fluid" style="margin: 0 -30px;">
     <a href="javascript:void(0)" class="cd-close hidden"></a>
 
     <!-- Header -->
-    <header class="container row home-container"  style="background-color: #333">
-        <div class="col-lg-6" id="academy-summary">
-            <div class="intro-text text-center">
-                <img src="img/academy-sp.png" class="img-circle">
-                <h3 class="intro-heading text-center">足球学院</h3>
-                <p class="container hidden">
-                    MBP足球学院是我们的骄傲，也是我们最大的满足。我们团队这么多年辛勤工作，专注于足球这项伟大的体育运动，这也是对我们最大的回报。我们的MBP（培养更好的球员）方法是基于优化球员的认知结构。
-                    为了能实现这个目标，我们与在足球领域中欧洲最著名的大学之一——加泰罗尼亚中央大学，进行了多达十年的科学研究和实践，我们的MBP学院为每一个球员从儿童阶段一直到去退役，制定了完整易懂的训练学习计划。因此，MBP为每位球员从开始踢球到结束运动生涯的每个阶段，都制定了相应的策略，使球员们能顺利在每个阶段过渡。
-                </p>
-                <a href="#academy" class="page-scroll btn btn-sm btn-transparent-white text-center hidden">了解更多</a>
+    <header class="container-fluid home-container">
+        <div class="row" style="margin: 0 100px">
+            <div class="col-lg-6" id="academy-summary">
+                <div class="intro-text text-center">
+                    <img src="img/academy-sp.png" class="img-circle">
+                    <h3 class="intro-heading text-center">足球学院</h3>
+                    <p class="container hidden">
+                        MBP足球学院是我们的骄傲，也是我们最大的满足。我们团队这么多年辛勤工作，专注于足球这项伟大的体育运动，这也是对我们最大的回报。我们的MBP（培养更好的球员）方法是基于优化球员的认知结构。
+                        为了能实现这个目标，我们与在足球领域中欧洲最著名的大学之一——加泰罗尼亚中央大学，进行了多达十年的科学研究和实践，我们的MBP学院为每一个球员从儿童阶段一直到去退役，制定了完整易懂的训练学习计划。因此，MBP为每位球员从开始踢球到结束运动生涯的每个阶段，都制定了相应的策略，使球员们能顺利在每个阶段过渡。
+                    </p>
+                    <a href="#academy" class="page-scroll btn btn-sm btn-transparent-white text-center hidden">了解更多</a>
+                </div>
+            </div>
+            <div class="col-lg-6" id="coach-summary">
+                <div class="intro-text text-center">
+                    <img src="img/coach-sp.png" class="img-circle">
+                    <h3 class="intro-heading text-center">教练学院</h3>
+                    <p class="container hidden">
+                        MBP足球教练学校的重点在于培训世界各地的足球教练，提出适合于每个人的方案，并只求一个结果：优化其技术水平以达到最大的指数。我们知识体系的一致性使得我们的教练员清楚地了解组成足球的所有结构，以确保每一个在我们教练学院接受培训的教练员能够接受我们培训的最高质量。
+                        这种全面的和综合的教学转变将使教练员能够进入人类学习的最重要的一个阶段，知识的可用性在这个过程会是非常必要地。总之，在与我们合作之后，教练们不知道他们已经知道这么多内容，并且当他们参与到日常的足球教学以及足球比赛时，他们将会如鱼得水，能够非常得心应手的应对所有的挑战。
+                    </p>
+                    <a href="#coach" class="page-scroll btn btn-sm btn-transparent-white text-center hidden">了解更多</a>
+                </div>
             </div>
         </div>
-        <div class="col-lg-6" id="coach-summary">
-            <div class="intro-text text-center">
-                <img src="img/coach-sp.png" class="img-circle">
-                <h3 class="intro-heading text-center">教练学院</h3>
-                <p class="container hidden">
-                    MBP足球教练学校的重点在于培训世界各地的足球教练，提出适合于每个人的方案，并只求一个结果：优化其技术水平以达到最大的指数。我们知识体系的一致性使得我们的教练员清楚地了解组成足球的所有结构，以确保每一个在我们教练学院接受培训的教练员能够接受我们培训的最高质量。
-                    这种全面的和综合的教学转变将使教练员能够进入人类学习的最重要的一个阶段，知识的可用性在这个过程会是非常必要地。总之，在与我们合作之后，教练们不知道他们已经知道这么多内容，并且当他们参与到日常的足球教学以及足球比赛时，他们将会如鱼得水，能够非常得心应手的应对所有的挑战。
-                </p>
-                <a href="#coach" class="page-scroll btn btn-sm btn-transparent-white text-center hidden">了解更多</a>
+
+        <div class="container nav-slide" id="anchor-slick">
+            <div class="col-lg-4">
+                <a ng-click="scrollTo('/academy', 'academy-1')">
+                    <img class="img-responsive img-wrapper" src="img/nav/academy-overview.png" />
+                    <h4>概述</h4>
+                </a>
+            </div>
+            <div class="col-lg-4">
+                <a ng-click="scrollTo('/academy', 'academy-2')">
+                    <img class="img-responsive img-wrapper" src="img/nav/academy-train.png" />
+                    <h4>特训营</h4>
+                </a>
+            </div>
+            <div class="col-lg-4">
+                <a ng-click="scrollTo('/academy', 'academy-3')">
+                    <img class="img-responsive img-wrapper" src="img/nav/academy-teach.png"/>
+                    <h4>教学方式</h4>
+                </a>
+            </div>
+            <div class="col-lg-4">
+                <a ng-click="scrollTo('/academy', 'academy-1')">
+                    <img class="img-responsive img-wrapper" src="img/nav/academy-plan.png" />
+                    <h4>训练计划</h4>
+                </a>
+            </div>
+            <div class="col-lg-4">
+                <a ng-click="scrollTo('/academy', 'academy-2')">
+                    <img class="img-responsive img-wrapper" src="img/nav/academy-assume.png" />
+                    <h4>球员评估</h4>
+                </a>
+            </div>
+            <div class="col-lg-4">
+                <a ng-click="scrollTo('/coach', 'coach-1')">
+                    <img class="img-responsive img-wrapper" src="img/nav/coach-overview.png" />
+                    <h4>教学理念</h4>
+                </a>
+            </div>
+            <div class="col-lg-4">
+                <a ng-click="scrollTo('/coach', 'coach-2')">
+                    <img class="img-responsive img-wrapper" src="img/nav/coach-forum.png" />
+                    <h4>研讨会</h4>
+                </a>
+            </div>
+            <div class="col-lg-4">
+                <a ng-click="scrollTo('/coach', 'coach-3')">
+                    <img class="img-responsive img-wrapper" src="img/nav/coach-master.png"/>
+                    <h4>足球专业硕士</h4>
+                </a>
             </div>
         </div>
     </header>
@@ -30,62 +83,71 @@
 
 
 <script>
-    $('.intro-text').mouseenter(function () {
-        $(this).css('background-color', 'rgba(0, 0, 0, 0.3)');
-    }).mouseleave(function () {
-        $(this).css('background-color', 'rgba(0, 0, 0, 0.6)');
-    });
+            $('.intro-text').mouseenter(function () {
+                $(this).css('background-color', 'rgba(0, 0, 0, 0.3)');
+            }).mouseleave(function () {
+                $(this).css('background-color', 'rgba(0, 0, 0, 0.6)');
+            });
 
-    $('#academy-summary').click(function () {
-        $(this).animate({
-            width: "100%",
-            direction: 'right'
-        }, {
-            duration: 400,
-            start: function () {
-                $('#academy-summary').removeClass('col-lg-6');
-            },
-            complete: function () {
-                $(this).find('.intro-text p').removeClass('hidden');
-                $('.cd-close').removeClass('hidden');
-                $('#coach-summary').addClass('hidden');
-            }
-        });
+            $('#academy-summary').click(function () {
+                $(this).animate({
+                    width: "100%",
+                    direction: 'right'
+                }, {
+                    duration: 600,
+                    start: function () {
+                        $('#academy-summary').removeClass('col-lg-6');
+                    },
+                    complete: function () {
+                        $(this).find('.intro-text p').removeClass('hidden');
+                        $('.cd-close').removeClass('hidden');
+                        $('#coach-summary').addClass('hidden');
+                    }
+                });
 
-    });
+            });
 
-    $('#coach-summary').click(function () {
-        $('#academy-summary').animate({
-            width: "0%",
-            direction: 'left'
-        }, {
-            duration: 400,
-            start: function () {
-                $('#coach-summary').removeClass('col-lg-6');
-            },
-            complete: function () {
-                $('#coach-summary').find('.intro-text p').removeClass('hidden');
-                $('.cd-close').removeClass('hidden');
-                $('#academy-summary').addClass('hidden');
-            }
-        });
+            $('#coach-summary').click(function () {
+                $('#academy-summary').animate({
+                    width: "0%",
+                    direction: 'left'
+                }, {
+                    duration: 1000,
+                    start: function () {
+                        $('#coach-summary').removeClass('col-lg-6');
+                    },
+                    complete: function () {
+                        $('#coach-summary').find('.intro-text p').removeClass('hidden');
+                        $('.cd-close').removeClass('hidden');
+                        $('#academy-summary').addClass('hidden');
+                    }
+                });
 
-    });
+            });
 
-    $('.cd-close').click(function () {
-        //TODO close animation        
-        $('#academy-summary').animate({
-            width: "50%"
-        }, {
-            duration: 500,
-            start: function () {
-                $('#coach-summary').removeClass('hidden').addClass('col-lg-6');
-                $('#academy-summary').removeClass('hidden').addClass('col-lg-6');
-            },
-            complete: function () {
-                $('.intro-text p').addClass('hidden');
-                $('.cd-close').addClass('hidden');
-            }
-        });
-    });
+            $('.cd-close').click(function () {
+                //TODO close animation        
+                $('#academy-summary').animate({
+                    width: "50%"
+                }, {
+                    duration: 1000,
+                    start: function () {
+                        $('#coach-summary').removeClass('hidden').addClass('col-lg-6');
+                        $('#academy-summary').removeClass('hidden').addClass('col-lg-6');
+                        $('.cd-close').addClass('hidden');
+
+                    },
+                    complete: function () {
+                        $('.intro-text p').addClass('hidden');
+                    }
+                });
+            });
+
+            $('#anchor-slick').slick({
+                arrows: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
 </script>
