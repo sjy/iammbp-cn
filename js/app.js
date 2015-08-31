@@ -6,8 +6,11 @@ var myApp = angular.module('mbpApp', ['ngRoute']);
 
 myApp.controller('mainController', ['$scope', '$location', '$anchorScroll', function ($scope, $location, $anchorScroll) {
         $scope.pageName = '首页';
-        $scope.scrollTo = function (id) {
-            $location.hash(id);
+        $scope.scrollTo = function (path, id) {
+            $location.path(path);
+            if (id) {
+                $location.hash(id);
+            }
             $anchorScroll();
         };
         $scope.changeName = function (name) {
@@ -23,6 +26,10 @@ myApp.controller('mainController', ['$scope', '$location', '$anchorScroll', func
 myApp.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.
                 when('/', {
+                    templateUrl: 'views/home.html',
+                    controller: 'mainController'
+                }).
+                when('/home', {
                     templateUrl: 'views/home.html',
                     controller: 'mainController'
                 }).

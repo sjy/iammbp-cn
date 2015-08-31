@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html>
 
     <head>
 
@@ -9,7 +9,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>首页 - I am MBP</title>
+        <title>I am MBP</title>
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
         <!-- Bootstrap Core CSS -->
@@ -48,20 +48,20 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand page-scroll text-nowrap" href="#home" data-target="#home">
-                        <!--<img class="img-responsive" src="img/logos/logosnold.png">-->
-                        I am MBP
+                    <a class="navbar-brand page-scroll text-nowrap" href="#home" style="margin: 5px 10px;" >
+                        <img class="img-responsive" style="height: 40px;margin-top: -5px;" src="img/logos/logosnold.png">
+                        <!--I am MBP-->
                     </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-center">
                         <li>
-                            <a  class="page-scroll" href="#academy" data-target="#academy">足球学院</a>
+                            <a  class="page-scroll academy" href="#academy" data-target="#academy">足球学院</a>
                         </li>
                         <li>
-                            <a class="page-scroll"  href="#coach" data-target="#coacch">教练学院</a>
+                            <a class="page-scroll coach"  href="#coach" data-target="#coacch">教练学院</a>
                         </li>
                         <li>
                             <a class="page-scroll"  href="#about" data-target="#about">关于我们</a>
@@ -70,6 +70,70 @@
                             <a class="page-scroll"  href="#cases" data-target="#case">品牌案例</a>
                         </li>
                     </ul>
+                </div>
+                
+                <div class="nav-menu container-fluid  academy">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <a ng-click="scrollTo('/academy','academy-1')">
+                                <img class="img-responsive img-wrapper" src="img/nav/academy-overview.png" />
+                                <h4>概述</h4>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a ng-click="scrollTo('/academy','academy-2')">
+                                <img class="img-responsive img-wrapper" src="img/nav/academy-train.png" />
+                                <h4>特训营</h4>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a ng-click="scrollTo('/academy','academy-3')">
+                                <img class="img-responsive img-wrapper" src="img/nav/academy-teach.png"/>
+                                <h4>教学方式</h4>
+                            </a>
+                        </div>
+                          <div class="col-lg-4">
+                            <a ng-click="scrollTo('/academy','academy-1')">
+                                <img class="img-responsive img-wrapper" src="img/nav/academy-plan.png" />
+                                <h4>训练计划</h4>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a ng-click="scrollTo('/academy','academy-2')">
+                                <img class="img-responsive img-wrapper" src="img/nav/academy-assume.png" />
+                                <h4>球员评估</h4>
+                            </a>
+                        </div>
+<!--                        <div class="col-lg-4">
+                            <a ng-click="scrollTo('/academy','academy-3')">
+                                <img class="img-responsive img-wrapper" src="img/nav/academy-social.png"/>
+                                <h4>个性话社交</h4>
+                            </a>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="nav-menu container-fluid  coach">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <a ng-click="scrollTo('/coach','coach-1')">
+                                <img class="img-responsive img-wrapper" src="img/nav/coach-overview.png" />
+                                <h4>教学理念</h4>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a ng-click="scrollTo('/coach','coach-2')">
+                                <img class="img-responsive img-wrapper" src="img/nav/coach-forum.png" />
+                                <h4>研讨会</h4>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a ng-click="scrollTo('/coach','coach-3')">
+                                <img class="img-responsive img-wrapper" src="img/nav/coach-master.png"/>
+                                <h4>足球专业硕士</h4>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
@@ -85,7 +149,7 @@
                 <div class="col-md-3">
                     <img src="img/logos/logoppag.png">
                 </div>
-                <div class="col-md-7 col-md-offset-2">
+                <div class="col-md-7 col-md-offset-2 hidden">
                     <a class="contact-info btn btn-success"><i class="fa fa-wechat fa-adivgn-center">微信公众号</i></a>
                     <a class="contact-info btn btn-danger"><i class="fa fa-weibo fa-adivgn-center">新浪微博</i></a>
                     <a href="mailto:info@businesschina.es" class="contact-info btn btn-info">
@@ -100,7 +164,7 @@
                 <span class="copyright">&copy;2015 IAMMBP llc. All Rights Reserved</span>
             </div>
         </footer>
-        
+
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
 
@@ -123,6 +187,27 @@
         <!-- Custom Theme JavaScript -->
         <script src="js/app.js"></script>
         <script src="js/agency.js"></script>
+
+        <script>
+                $('.page-scroll.academy').hover(function () {
+                    $('.nav-menu.coach:visible').slideUp();
+                    $('.nav-menu.academy').slideDown('slow');
+                });
+
+                $('.page-scroll.coach').hover(function () {
+                    $('.nav-menu.academy:visible').slideUp();
+                    $('.nav-menu.coach').slideDown('slow');
+                });
+
+
+                $('a.page-scroll:not(.coach,.academy)').hover(function () {
+                    $('.nav-menu').slideUp('slow');
+                });
+
+                $('.nav-menu').mouseleave(function () {
+                    $('.nav-menu').slideUp('slow');
+                });
+        </script>
 
     </body>
 
