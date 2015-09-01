@@ -57,6 +57,9 @@ nav.navbar {
 }
 
 .nav-slide {
+    margin: 10px 100px;
+    position: relative;
+    bottom:100px;
 
     .col-lg-4 {
         margin: 10px 0;
@@ -66,7 +69,9 @@ nav.navbar {
 
         img {
             z-index: 2;
-            width:100%;
+            width: 100%;
+            /*height: 250px;*/
+            
             &:hover {
                 outline:solid 2px #eceef1;
             }
@@ -80,7 +85,7 @@ nav.navbar {
             background: rgba(0,0,0,.65);
             padding: .5em 0.8em;
             margin:0;
-            right:0;
+            right:15px;
         }
     }
 }
@@ -88,8 +93,8 @@ nav.navbar {
 .cd-close {
     z-index: 2;
     position: fixed;
-    top: 100px;
-    right: 15%;
+    top: 120px;
+    right: 20%;
     background: url("../img/close.svg") no-repeat center center;
     background-size: 44px;
     width: 44px;
@@ -120,9 +125,15 @@ nav.navbar {
     }
 
     #coach-summary{
+        top:-15px;
         background-image:url('../img/coach-bp.png');
         background-position: 30% 80px;
+    }
 
+    .rotated {
+        transform: rotate(-2deg);
+        -webkit-transform: rotate(-2deg);
+        -moz-transform: rotate(-2deg);
     }
 
     #academy-summary, #coach-summary {
@@ -133,10 +144,11 @@ nav.navbar {
         transition: opacity 0.5s, height 0.4s;
         transition-timing-function: ease;
         min-height: 600px;
-        margin-bottom: 70px;
-        transform: rotate(-5deg);
-        -webkit-transform: rotate(-5deg);
-        -moz-transform: rotate(-5deg);
+        margin-bottom: 50px;
+        
+        p {
+           margin: 0 5%;
+        }
     }
 
     > div{
@@ -148,7 +160,8 @@ nav.navbar {
         }
 
         .intro-text {
-            padding-top: 350px;
+            opacity: 0.5;
+            padding-top: 200px;
             background-color: RGBA(0,0,0,.6);
             transition-property: background;
             transition-duration: 0.5s;
@@ -283,7 +296,7 @@ footer {
 
 .number-circle{
     background: transparent;
-    border: 1px solid #6e6e6e;
+    border: 1px solid #000;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -302,7 +315,7 @@ footer {
     .media-body {
         padding: 20px;
     }
-    
+
     &:before{
         content: "";
         display: block;
@@ -324,11 +337,13 @@ footer {
 
 .bg-stacked-yellow {
     color:#000;
+    border-color: #000;
     background:#fb0;
 }
 
 .bg-stacked-black {
-    color:#6e6e6e;
+    color: #eee;
+    border-color: #eee;
     background:#000;
 }
 
@@ -354,7 +369,8 @@ footer {
 .img-header {
     margin-top:-40px;
     height: 200px;
-    background-position:center 33%;
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .slick-prev:before, .slick-next:before { 
