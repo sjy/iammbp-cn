@@ -67,3 +67,13 @@ myApp.filter('range', function () {
         return input;
     };
 });
+
+myApp.directive('footer', function () {
+    return {
+        restrict: 'A', //This menas that it will be used as an attribute and NOT as an element. I don't like creating custom HTML elements
+        scope: true,
+        transclude: false,
+        templateUrl: "directives/footer.html",
+        controller: 'mainController'
+    };
+});

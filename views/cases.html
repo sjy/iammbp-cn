@@ -1,6 +1,5 @@
-<!-- Team Section -->
-<section id="team" class="bg-light-gray">
-    <div class="container">
+<section id="team">
+    <div  class="section">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading side-line">媒体报道</h2>
@@ -18,13 +17,16 @@
                 <img src='img/cases/media3.png' alt=""/>
             </a>
         </div>
+    </div>
+
+    <div class="section">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading side-line">明星教练</h2>
                 <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
         </div>
-        <div class="row">
+        <div class="container">
             <div class="col-sm-4" ng-repeat="i in []|range:5">
                 <div class="team-member">
                     <img src="img/cases/coach{{$index + 1}}.png" class="img-responsive img-circle" alt="">
@@ -41,35 +43,38 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="section">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading side-line">顶级俱乐部</h2>
                 <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
         </div>
-        <div class="row bg-stacked" id="clubs-slick" style="background: #fff">
+        <div class="container bg-stacked" id="clubs-slick" style="background: #fff">
             <div class="col-sm-3" >
                 <img src="img/clubs/escudo1.jpg" class="img-responsive"/>
             </div>
-              <div class="col-sm-3" >
+            <div class="col-sm-3" >
                 <img src="img/clubs/escudo2.jpg" class="img-responsive"/>
             </div>
             <div class="col-sm-3" >
                 <img src="img/clubs/escudo3.jpg" class="img-responsive"/>
             </div>
-             <div class="col-sm-3" >
+            <div class="col-sm-3" >
                 <img src="img/clubs/escudo4.jpg" class="img-responsive"/>
             </div>
-              <div class="col-sm-3" >
+            <div class="col-sm-3" >
                 <img src="img/clubs/escudo5.jpg" class="img-responsive"/>
             </div>
             <div class="col-sm-3" >
                 <img src="img/clubs/escudo6.jpg" class="img-responsive"/>
             </div>
-             <div class="col-sm-3" >
+            <div class="col-sm-3" >
                 <img src="img/clubs/escudo7.jpg" class="img-responsive"/>
             </div>
-              <div class="col-sm-3" >
+            <div class="col-sm-3" >
                 <img src="img/clubs/escudo8.jpg" class="img-responsive"/>
             </div>
             <div class="col-sm-3" >
@@ -81,25 +86,25 @@
             <div class="col-sm-3" >
                 <img src="img/clubs/escudo11.jpg" class="img-responsive"/>
             </div>
-              <div class="col-sm-3" >
+            <div class="col-sm-3" >
                 <img src="img/clubs/escudo12.jpg" class="img-responsive"/>
             </div>
             <div class="col-sm-3" >
                 <img src="img/clubs/escudo13.jpg" class="img-responsive"/>
             </div>
-             <div class="col-sm-3" >
+            <div class="col-sm-3" >
                 <img src="img/clubs/escudo14.jpg" class="img-responsive"/>
             </div>
-              <div class="col-sm-3" >
+            <div class="col-sm-3" >
                 <img src="img/clubs/escudo15.jpg" class="img-responsive"/>
             </div>
             <div class="col-sm-3" >
                 <img src="img/clubs/escudo16.jpg" class="img-responsive"/>
             </div>
-             <div class="col-sm-3" >
+            <div class="col-sm-3" >
                 <img src="img/clubs/escudo17.jpg" class="img-responsive"/>
             </div>
-              <div class="col-sm-3" >
+            <div class="col-sm-3" >
                 <img src="img/clubs/escudo18.jpg" class="img-responsive"/>
             </div>
             <div class="col-sm-3" >
@@ -111,22 +116,26 @@
             <div class="col-sm-3" >
                 <img src="img/clubs/escudo21.jpg" class="img-responsive"/>
             </div>
-              <div class="col-sm-3" >
+            <div class="col-sm-3" >
                 <img src="img/clubs/escudo22.jpg" class="img-responsive"/>
             </div>
             <div class="col-sm-3" >
                 <img src="img/clubs/escudo23.jpg" class="img-responsive"/>
             </div>
-             <div class="col-sm-3" >
+            <div class="col-sm-3" >
                 <img src="img/clubs/escudo24.jpg" class="img-responsive"/>
             </div>
-              <div class="col-sm-3" >
+            <div class="col-sm-3" >
                 <img src="img/clubs/escudo25.jpg" class="img-responsive"/>
             </div>
             <div class="col-sm-3" >
                 <img src="img/clubs/escudo26.jpg" class="img-responsive"/>
             </div>
         </div>
+        <div footer style="margin-top: 100px"></div>
+
+    </div>
+
 </section>
 <script>
             $('#clubs-slick').slick({
@@ -139,5 +148,9 @@
             });
 
             $('#media-slider').coinslider({height: 600, width: 800, effect: 'straight', navigation: false, delay: 2000});
+//    $('#team').fullpage({
+//        fixedElements: 'header, .footer',
+//        sectionsColor: ['#fff', '#fff', '#fff']
+//    });
 
 </script>

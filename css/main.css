@@ -15,27 +15,23 @@ nav.navbar {
   nav.navbar a {
     font-size: 2rem; }
   nav.navbar .nav-menu {
-    display: none; }
+    /*display: none;*/ }
     nav.navbar .nav-menu > div {
       padding-top: 10px; }
     nav.navbar .nav-menu .col-lg-4 {
       margin-bottom: 10px; }
-    nav.navbar .nav-menu a {
-      position: relative;
-      vertical-align: bottom; }
-      nav.navbar .nav-menu a img {
-        z-index: 2;
-        width: 100%; }
-        nav.navbar .nav-menu a img:hover {
-          outline: solid 2px #eceef1; }
-      nav.navbar .nav-menu a h4 {
-        position: absolute;
-        left: 0;
-        bottom: -2px;
-        background: rgba(0, 0, 0, 0.65);
-        padding: .5em 0.8em;
-        margin: 0;
-        width: 100%; }
+    nav.navbar .nav-menu a img {
+      z-index: 2;
+      width: 100%; }
+      nav.navbar .nav-menu a img:hover {
+        outline: solid 2px #eceef1; }
+    nav.navbar .nav-menu a h4 {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.65);
+      padding: 8px 10px;
+      margin: 0;
+      width: calc(100% - 30px); }
 
 .nav-slide {
   margin: 10px 100px;
@@ -46,7 +42,7 @@ nav.navbar {
   .nav-slide a img {
     z-index: 2;
     width: 100%;
-    /*height: 250px;*/ }
+    height: 180px; }
     .nav-slide a img:hover {
       outline: solid 2px #eceef1; }
   .nav-slide a h4 {
@@ -273,3 +269,6 @@ footer .copyright-info {
   text-align: center; }
 #clubs-slick img {
   vertical-align: middle; }
+
+.col-lg-12.text-center {
+  margin-top: 50px; }

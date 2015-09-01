@@ -1,6 +1,5 @@
-<!-- About Section -->
-<section id="about">
-    <div class="container">
+<section id="about-sections">
+    <div class="container section">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">关于我们</h2>
@@ -63,4 +62,12 @@
             </div>
         </div>
     </div>
+    <div class="footer" footer> </div>
 </section>
+<script>
+    $('#about-sections').fullpage({
+        fixedElements: 'header',
+        autoScrolling: false,
+        sectionsColor: ['#fff', '#fff', '#fff']
+    });
+</script>
