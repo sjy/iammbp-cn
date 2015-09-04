@@ -318,6 +318,11 @@ footer {
 
     .media-body {
         padding: 20px;
+        max-width: 50%;
+    }
+    
+    img {
+        width: 100%
     }
 
     &:before{

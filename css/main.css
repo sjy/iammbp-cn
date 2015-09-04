@@ -227,7 +227,10 @@ footer .copyright-info {
 .bg-stacked-black, .bg-stacked-yellow, .bg-stacked {
   padding: 25px 0; }
   .bg-stacked-black .media-body, .bg-stacked-yellow .media-body, .bg-stacked .media-body {
-    padding: 20px; }
+    padding: 20px;
+    max-width: 50%; }
+  .bg-stacked-black img, .bg-stacked-yellow img, .bg-stacked img {
+    width: 100%; }
   .bg-stacked-black:before, .bg-stacked-yellow:before, .bg-stacked:before {
     content: "";
     display: block;

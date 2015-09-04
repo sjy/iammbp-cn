@@ -11,7 +11,7 @@ myApp.controller('mainController', ['$scope', '$location', '$anchorScroll', func
             if (id) {
                 $location.hash(id);
             }
-            $anchorScroll();
+//            $anchorScroll();
         };
         $scope.changeName = function (name) {
             $scope.pageName = name;
