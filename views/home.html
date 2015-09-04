@@ -1,4 +1,4 @@
-<div  id="home-sections" class="container-fluid" style="margin: 0 -30px;">
+<div  id="home-sections" class="container-fluid" style="padding: 0">
     <a href="javascript:void(0)" class="cd-close hidden"></a>
 
     <!-- Header -->
@@ -78,7 +78,7 @@
                 </a>
             </div>
         </div>
-        <div footer></div>
+        <!--<div footer></div>-->
     </header>
 </div>
 
@@ -99,8 +99,7 @@
                 }, {
                     duration: 600,
                     start: function () {
-                        $('#academy-summary').removeClass('col-lg-6');
-                        $('#coach-summary').addClass('hidden');
+                        $('#coach-summary').width('0').hide();
                     },
                     complete: function () {
                         $(this).find('.intro-text p').removeClass('hidden');
@@ -117,8 +116,7 @@
                 }, {
                     duration: 1000,
                     start: function () {
-                        $('#coach-summary').removeClass('col-lg-6');
-                        $('#academy-summary').addClass('hidden');
+                        $('#academy-summary').width('0').hide();
                     },
                     complete: function () {
                         $('#coach-summary').find('.intro-text p').removeClass('hidden');
@@ -130,16 +128,19 @@
             });
 
             $('.cd-close').click(function () {
-                if ($('#academy-summary').hasClass('hidden')) {
-                    $('#coach-summary').animate({
-                        width: "50%"
+                if ($('#academy-summary').width() === 0) {
+                    $('#academy-summary').animate({
+                        width: "50%",
+                        direction: 'left'
                     }, {
                         duration: 600,
                         start: function () {
-                            $('#coach-summary').removeClass('hidden').addClass('col-lg-6');
-                            $('#academy-summary').removeClass('hidden').addClass('col-lg-6');
+                            $('#academy-summary').show();
+                            $('#coach-summary').width('50%').show();
                             $('.cd-close').addClass('hidden');
                             $('.intro-text p').addClass('hidden');
+                        },
+                        complete: function () {
                         }
                     });
                 } else {
@@ -148,8 +149,7 @@
                     }, {
                         duration: 600,
                         start: function () {
-                            $('#coach-summary').removeClass('hidden').addClass('col-lg-6');
-                            $('#academy-summary').removeClass('hidden').addClass('col-lg-6');
+                            $('#coach-summary').width('50%').show();
                             $('.cd-close').addClass('hidden');
                             $('.intro-text p').addClass('hidden');
                         }
@@ -162,11 +162,11 @@
                 arrows: true,
                 slidesToShow: 4,
                 slidesToScroll: 1,
-                autoplay: false,
+                autoplay: true,
                 autoplaySpeed: 2000
             });
 
-//            $('#home-sections').fullpage({
-//                autoScrolling: false
-//            });
+            $('#home-sections').fullpage({
+                autoScrolling: false
+            });
 </script>
