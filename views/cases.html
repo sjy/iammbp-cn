@@ -1,4 +1,30 @@
 <section id="team">
+    <div class="section">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading side-line">明星教练</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-sm-3" ng-repeat="i in []|range:4">
+                <div class="team-member">
+                    <img src="img/cases/coach{{$index + 1}}.png" class="img-responsive img-circle" alt="">
+                    <h4>Kay Garland</h4>
+                    <p class="text-muted">Lead Designer</p>
+                    <ul class="list-inline social-buttons hidden">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div  class="section">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -20,39 +46,13 @@
     </div>
 
     <div class="section">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading side-line">明星教练</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-        </div>
-        <div class="container">
-            <div class="col-sm-4" ng-repeat="i in []|range:5">
-                <div class="team-member">
-                    <img src="img/cases/coach{{$index + 1}}.png" class="img-responsive img-circle" alt="">
-                    <h4>Kay Garland</h4>
-                    <p class="text-muted">Lead Designer</p>
-                    <ul class="list-inline social-buttons hidden">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="row">
+        <div class="row" style="margin-top: 80px;">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading side-line">顶级俱乐部</h2>
                 <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
         </div>
-        <div class="container bg-stacked" id="clubs-slick" style="background: #fff">
+        <div class="container bg-stacked" id="clubs-slick" style=" margin-top: 50px;margin-bottom: 50px;background: #fff">
             <div class="col-sm-3" >
                 <img src="img/clubs/escudo1.jpg" class="img-responsive"/>
             </div>
@@ -132,8 +132,7 @@
                 <img src="img/clubs/escudo26.jpg" class="img-responsive"/>
             </div>
         </div>
-        <div footer style="margin-top: 100px"></div>
-
+        <div footer style="margin-top: 10%;"></div>
     </div>
 
 </section>
@@ -148,9 +147,6 @@
             });
 
             $('#media-slider').coinslider({height: 600, width: 800, effect: 'straight', navigation: false, delay: 2000});
-//    $('#team').fullpage({
-//        fixedElements: 'header, .footer',
-//        sectionsColor: ['#fff', '#fff', '#fff']
-//    });
+            $('#team').fullpage();
 
 </script>

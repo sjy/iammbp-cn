@@ -10,12 +10,16 @@ and open the template in the editor.
 body {
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif,FontA; }
 
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
 nav.navbar {
   color: #000; }
   nav.navbar a {
     font-size: 2rem; }
   nav.navbar .nav-menu {
-    /*display: none;*/ }
+    display: none; }
     nav.navbar .nav-menu > div {
       padding-top: 10px; }
     nav.navbar .nav-menu .col-lg-4 {
@@ -128,11 +132,12 @@ nav.navbar {
         margin-top: -15px; }
 
 footer .contact-info-group {
-  padding: 20px;
+  padding: 20px 0;
   background-color: #333; }
   footer .contact-info-group img {
     height: 42px; }
   footer .contact-info-group .contact-info {
+    display: none;
     margin: 5px 10px;
     font-size: 1.2vw;
     white-space: nowrap;

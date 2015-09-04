@@ -13,6 +13,12 @@ body {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif,FontA;
 }
 
+
+.row {
+    margin-left: 0;
+    margin-right:0;
+}
+
 nav.navbar {
     color:#000;
 
@@ -21,7 +27,7 @@ nav.navbar {
     }
 
     .nav-menu {
-        /*display: none;*/
+        display: none;
 
         >div {
             padding-top: 10px;
@@ -192,13 +198,14 @@ nav.navbar {
 
 footer {
     .contact-info-group {
-        padding:20px;
+        padding:20px 0;
         background-color: #333;
         img {
             height: 42px;
         }
 
         .contact-info {
+            display:none;
             margin:5px 10px;
             font-size: 1.2vw;
             white-space: nowrap;
