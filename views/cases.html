@@ -10,7 +10,7 @@
             <div class="col-sm-3" ng-repeat="i in []|range:4">
                 <div class="team-member">
                     <img src="img/cases/coach{{$index + 1}}.png" class="img-responsive img-circle" alt="">
-                    <h4>Kay Garland</h4>
+                    <h4 ng-bind="coachNames[{{$index}}]"></h4>
                     <p class="text-muted">Lead Designer</p>
                     <ul class="list-inline social-buttons hidden">
                         <li><a href="#"><i class="fa fa-twitter"></i></a>

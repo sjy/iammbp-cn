@@ -6,12 +6,9 @@ var myApp = angular.module('mbpApp', ['ngRoute']);
 
 myApp.controller('mainController', ['$scope', '$location', '$anchorScroll', function ($scope, $location, $anchorScroll) {
         $scope.pageName = '首页';
-        $scope.scrollTo = function (path, id) {
-            $location.path(path);
-            if (id) {
-                $location.hash(id);
-            }
-//            $anchorScroll();
+        $scope.coachNames = ['Enrique Meza Jr', 'Agustín Lleida ','Javier Mier ','Jaime Lozano','Pablo Bonells'];
+        $scope.scrollTo = function (section) {
+            $.fn.fullpage.moveTo(section);
         };
         $scope.changeName = function (name) {
             $scope.pageName = name;

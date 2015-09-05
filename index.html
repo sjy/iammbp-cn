@@ -86,60 +86,54 @@
                 <div class="nav-menu container-fluid  academy">
                     <div class="row">
                         <div class="col-lg-4">
-                            <a ng-click="scrollTo('/academy', 'academy-1')">
+                            <a ng-click="scrollTo(1)">
                                 <img class="img-responsive img-wrapper" src="img/nav/academy-overview.png" />
                                 <h4>概述</h4>
                             </a>
                         </div>
                         <div class="col-lg-4">
-                            <a ng-click="scrollTo('/academy', 'academy-3')">
+                            <a ng-click="scrollTo(2)">
                                 <img class="img-responsive img-wrapper" src="img/nav/academy-teach.png"/>
                                 <h4>教学方式</h4>
                             </a>
                         </div>
                         <div class="col-lg-4">
-                            <a ng-click="scrollTo('/academy', 'academy-4')">
+                            <a ng-click="scrollTo(5)">
                                 <img class="img-responsive img-wrapper" src="img/nav/academy-plan.png" />
                                 <h4>训练计划</h4>
                             </a>
                         </div>
                         <div class="col-lg-4">
-                            <a ng-click="scrollTo('/academy', 'academy-5')">
+                            <a ng-click="scrollTo(8)">
                                 <img class="img-responsive img-wrapper" src="img/nav/academy-assume.png" />
                                 <h4>球员评估</h4>
                             </a>
                         </div>
                         <div class="col-lg-4">
-                            <a ng-click="scrollTo('/academy', 'academy-2')">
+                            <a ng-click="scrollTo(9)">
                                 <img class="img-responsive img-wrapper" src="img/nav/academy-train.png" />
                                 <h4>特训营</h4>
                             </a>
                         </div>
-                        <!--                        <div class="col-lg-4">
-                                                    <a ng-click="scrollTo('/academy','academy-3')">
-                                                        <img class="img-responsive img-wrapper" src="img/nav/academy-social.png"/>
-                                                        <h4>个性话社交</h4>
-                                                    </a>
-                                                </div>-->
                     </div>
                 </div>
 
                 <div class="nav-menu container-fluid  coach">
                     <div class="row">
                         <div class="col-lg-4">
-                            <a href="#/coach#coach-1">
+                            <a ng-click="scrollTo(1)">
                                 <img class="img-responsive img-wrapper" src="img/nav/coach-overview.png" />
                                 <h4>教学理念</h4>
                             </a>
                         </div>
                         <div class="col-lg-4">
-                            <a  href="#/coach#coach-2">
+                            <a ng-click="scrollTo(2)">
                                 <img class="img-responsive img-wrapper" src="img/nav/coach-forum.png" />
                                 <h4>研讨会</h4>
                             </a>
                         </div>
                         <div class="col-lg-4">
-                            <a href="#/coach#coach-3">
+                            <a ng-click="scrollTo(3)">
                                 <img class="img-responsive img-wrapper" src="img/nav/coach-master.png"/>
                                 <h4>足球专业硕士</h4>
                             </a>
@@ -186,29 +180,33 @@
         <script type="text/javascript" src="slick/slick.min.js"></script>
 
         <script>
-                                        $('.page-scroll.academy').hover(function () {
+                                        $('.page-scroll.academy').mouseenter(function () {
+                                            $('.nav-menu.coach:visible').slideUp();
                                             if ($(this).parent().hasClass('active')) {
-                                                $('.nav-menu.coach:visible').slideUp();
                                                 $('.nav-menu.academy').slideDown('slow');
-                                            }
-                                        }).click(function () {
+                                                }
+                                            })
+                                      .click(function () {
                                             $('.nav-menu.coach:visible').slideUp();
                                             $('.nav-menu.academy').slideDown('slow');
                                         });
 
 
-                                        $('.page-scroll.coach').hover(function () {
+                                        $('.page-scroll.coach').mouseenter(function () {
+                                        $('.nav-menu.academy:visible').slideUp();
                                             if ($(this).parent().hasClass('active')) {
-                                                $('.nav-menu.academy:visible').slideUp();
                                                 $('.nav-menu.coach').slideDown('slow');
                                             }
-                                        }).click(function () {
+                                        })
+                                        .click(function () {
                                             $('.nav-menu.academy:visible').slideUp();
                                             $('.nav-menu.coach').slideDown('slow');
                                         });
                                         ;
 
                                         $('a.page-scroll:not(.coach,.academy)').click(function () {
+                                            $('.nav-menu:visible').slideUp('slow');
+                                        }).hover(function () {
                                             $('.nav-menu:visible').slideUp('slow');
                                         });
 
