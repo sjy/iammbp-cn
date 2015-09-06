@@ -39,8 +39,7 @@ nav.navbar {
 
 .nav-slide {
   margin: 10px 100px;
-  position: relative;
-  bottom: 100px; }
+  position: relative; }
   .nav-slide .col-lg-4 {
     margin: 10px 0; }
   .nav-slide a img {
@@ -97,8 +96,7 @@ nav.navbar {
     background-size: cover;
     transition: opacity 0.5s, height 0.4s;
     transition-timing-function: ease;
-    min-height: 600px;
-    margin-bottom: 50px; }
+    min-height: 600px; }
     .home-container #academy-summary p, .home-container #coach-summary p {
       margin: 0 5%; }
   .home-container > div {

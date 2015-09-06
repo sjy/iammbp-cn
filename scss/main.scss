@@ -62,7 +62,6 @@ nav.navbar {
 .nav-slide {
     margin: 10px 100px;
     position: relative;
-    bottom:100px;
 
     .col-lg-4 {
         margin: 10px 0;
@@ -145,7 +144,6 @@ nav.navbar {
         transition: opacity 0.5s, height 0.4s;
         transition-timing-function: ease;
         min-height: 600px;
-        margin-bottom: 50px;
 
         p {
             margin: 0 5%;
