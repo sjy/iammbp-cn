@@ -85,9 +85,7 @@ nav.navbar {
   .home-container #academy-summary {
     background-image: url("../img/academy-bp.png"); }
   .home-container #coach-summary {
-    top: -15px;
-    background-image: url("../img/coach-bp.png");
-    background-position: 30% 80px; }
+    background-image: url("../img/coach-bp.png"); }
   .home-container .rotated {
     transform: rotate(-2deg);
     -webkit-transform: rotate(-2deg);

@@ -1,6 +1,6 @@
 <section id="coach-sections">
     <div class="img-header" style="background-image: url('img/coaches/coach-header.jpg');height: 200px;"></div>
-    <div class="section" id="coach-1">
+    <div class="section" id="coach1" data-anchor="coach-1">
         <div class="media">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    <div class="section" id="coach-2">
+    <div class="section" id="coach2" data-anchor="coach-2">
         <div class="media">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -81,7 +81,7 @@
                             </li>
                         </ul>
                         <a href="javascript:void(0)" class="col-md-5">
-                            <img class="media-object media-logo" src="img/coaches/coach3.png" style="width:15vw" >
+                            <img class="media-object media-logo" src="img/coaches/coach3.png">
                         </a>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
         </div>
     </div>
 
-    <div class="section" id="coach-3">
+    <div class="section" id="coach3" data-anchor="coach-3"> 
         <div class="media">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -152,5 +152,7 @@
 
 <script>
     $('#coach-sections').fullpage({
+        lockAnchors:true,
+        anchors: ['coach-1', 'coach-2', 'coach-3']
     });
 </script>
